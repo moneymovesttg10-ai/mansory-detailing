@@ -14,9 +14,9 @@ export function Hero() {
         height={1080}
         className="absolute inset-0 h-full w-full object-cover opacity-60"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/30 to-transparent" />
-      <div className="absolute inset-0 noise opacity-[0.35] mix-blend-overlay pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/45 via-background/20 to-background/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/55 via-background/15 to-transparent" />
+      <div className="absolute inset-0 noise opacity-[0.2] mix-blend-overlay pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
         <motion.div
@@ -26,7 +26,7 @@ export function Hero() {
           className="inline-flex items-center gap-2 glass rounded-full px-3 py-1.5 text-[11px] text-white/70 mb-8"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
-          Huntingdon Valley, PA · Open today
+          Huntingdon Valley, PA · Open until 7 PM
         </motion.div>
 
         <motion.h1
@@ -34,9 +34,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease, delay: 0.1 }}
           className="text-gradient max-w-4xl text-5xl sm:text-6xl md:text-7xl lg:text-[84px] leading-[0.98] tracking-[-0.035em] font-medium"
-          style={{ fontFamily: "'Instrument Serif', serif", fontWeight: 400 }}
+          style={{ fontFamily: "'Instrument Serif', serif", fontWeight: 300 }}
         >
-          Premium Hand Wash<br />& Detailing.
+          |Car Detailing Done Right <br />|Mansory Detailing
         </motion.h1>
 
         <motion.p
@@ -45,7 +45,7 @@ export function Hero() {
           transition={{ duration: 0.9, ease, delay: 0.25 }}
           className="mt-7 max-w-xl text-base sm:text-lg text-white/70 leading-relaxed"
         >
-          Full-service car care in Huntingdon Valley, designed to protect, restore, and elevate your vehicle. You're closer to clean than you think.
+          Premium car detailing in Huntingdon Valley — built to protect, restore, and elevate every vehicle. Consultation and booking via direct message or phone.
         </motion.p>
 
         <motion.div
@@ -55,7 +55,7 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center gap-3"
         >
           <a
-            href="tel:2159478927"
+            href="tel:2153988619"
             className="group inline-flex items-center gap-2 bg-white text-black rounded-full px-5 py-3 text-sm font-medium hover:bg-white/90 transition-all shadow-[0_10px_40px_-10px_rgba(255,255,255,0.4)]"
           >
             <Phone className="h-4 w-4" />
@@ -76,13 +76,13 @@ export function Hero() {
           transition={{ duration: 0.9, ease, delay: 0.55 }}
           className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-[11px] uppercase tracking-[0.18em] text-white/45"
         >
-          <span>Hand Wash</span>
+          <span>Exterior Detail</span>
           <span className="text-white/20">·</span>
-          <span>Express Detail</span>
+          <span>Interior Detail</span>
           <span className="text-white/20">·</span>
-          <span>Professional Detail</span>
+          <span>Full Detail</span>
           <span className="text-white/20">·</span>
-          <span>Pennypack Trailhead</span>
+          <span>5.0 · 93 Reviews</span>
         </motion.div>
       </div>
 

@@ -1,0 +1,1 @@
+import{c as o}from"./createLucideIcon-eNlVAQUc.js";const c=[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]],r=o("arrow-right",c);const a=[["path",{d:"M21 12a9 9 0 1 1-6.219-8.56",key:"13zald"}]],t=o("loader-circle",a);export{r as A,t as L};

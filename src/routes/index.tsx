@@ -12,10 +12,10 @@ import { Footer } from "@/components/wheelworks/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Wheelworks VIP — Premium Hand Wash & Detailing in Huntingdon Valley, PA" },
-      { name: "description", content: "Premium hand washing and detailing in Huntingdon Valley, PA. Full-service car care designed to protect, restore, and elevate your vehicle. Call 215-947-8927." },
-      { property: "og:title", content: "Wheelworks VIP — Premium Hand Wash & Detailing" },
-      { property: "og:description", content: "Full-service hand washing and detailing in Huntingdon Valley, PA. You're closer to clean than you think." },
+      { title: "Mansory Detailing — Premium Car Detailing in Huntingdon Valley, PA" },
+      { name: "description", content: "Premium car detailing in Huntingdon Valley, PA. Rated 5.0 stars with 93 reviews. Located at 1940 Pioneer Rd. Call (215) 398-8619 or DM @mansory.detailing." },
+      { property: "og:title", content: "Mansory Detailing — Premium Car Detailing" },
+      { property: "og:description", content: "Premium car detailing in Huntingdon Valley, PA. Consultation and booking via direct message or phone." },
     ],
   }),
   component: Index,

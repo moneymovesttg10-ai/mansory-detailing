@@ -1,75 +1,60 @@
-import { motion } from "motion/react";
-import { Star } from "lucide-react";
+import { Gallery4, type Gallery4Item } from "@/components/ui/gallery4";
+import reviewMasrurjon from "@/assets/review-masrurjon.png";
+import reviewTimur from "@/assets/review-timur.png";
+import reviewSveta from "@/assets/review-sveta.png";
+import reviewBaimyrza from "@/assets/review-baimyrza.png";
+import reviewAndriy from "@/assets/review-andriy.png";
 
-const ease = [0.22, 1, 0.36, 1] as const;
-
-const reviews = [
+const reviewItems: Gallery4Item[] = [
   {
-    quote:
-      "The attention to detail is unreal. My car came back looking better than the day I bought it.",
-    name: "Daniel R.",
-    role: "Huntingdon Valley",
+    id: "masrurjon-makhmudov",
+    title: "Masrurjon Makhmudov",
+    subtitle: "Google Review · Local Guide",
+    description:
+      "I had an amazing experience here! The staff was incredibly friendly and professional from the moment I called for a quote until the job was done. The installation is flawless — no bubbles or peeling edges — and the car looks incredibly sleek now. Highly recommend this shop if you want quality work at a fair price!",
+    image: reviewMasrurjon,
   },
   {
-    quote:
-      "I drop the car off, take a walk on the Pennypack Trail, and come back to a spotless vehicle. Perfect routine.",
-    name: "Marissa K.",
-    role: "Local since 2022",
+    id: "timur-ramizov",
+    title: "Timur Ramizov",
+    subtitle: "Google Review · Local Guide",
+    description:
+      "Very professional and extremely clean work. My Lexus looks absolutely brand new — inside and out.",
+    image: reviewTimur,
   },
   {
-    quote:
-      "Best hand wash I've found in the area. Professional, careful, and consistent every single time.",
-    name: "Anthony S.",
-    role: "Range Rover owner",
+    id: "sveta-basinskaya",
+    title: "Sveta Basinskaya",
+    subtitle: "Google Review",
+    description:
+      "Wow! We are beyond impressed! The leather in our car looks stunning — like it just came out of the showroom. The color is rich and flawless, so natural, and the whole interior feels completely refreshed.",
+    image: reviewSveta,
+  },
+  {
+    id: "baimyrza-azhimatov",
+    title: "Baimyrza Azhimatov",
+    subtitle: "Google Review",
+    description:
+      "I recently got my car windows tinted at this detailing center, and I'm really impressed with the results. The team was professional, friendly, and paid great attention to detail. The tint looks perfect — clean installation with no bubbles or imperfections.",
+    image: reviewBaimyrza,
+  },
+  {
+    id: "andriy-uniyat",
+    title: "Andriy Uniyat",
+    subtitle: "Google Review · Local Guide",
+    description:
+      "The shop took care of my last minute request, answered all my questions, and delivered perfect results. Full ceramic tint all around looks perfect. Great customer service, fair pricing, and a very professional team. Highly recommend it!",
+    image: reviewAndriy,
   },
 ];
 
 export function Reviews() {
   return (
-    <section className="relative py-28 px-6">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease }}
-          className="max-w-2xl mb-14"
-        >
-          <div className="text-[11px] uppercase tracking-[0.2em] text-white/50 mb-4">Trusted locally</div>
-          <h2
-            className="text-gradient text-4xl sm:text-5xl md:text-6xl tracking-[-0.03em] leading-[1.02]"
-            style={{ fontFamily: "'Instrument Serif', serif" }}
-          >
-            A reputation built one car at a time.
-          </h2>
-        </motion.div>
-
-        <div className="grid md:grid-cols-3 gap-5">
-          {reviews.map((r, i) => (
-            <motion.figure
-              key={r.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.7, ease, delay: i * 0.08 }}
-              className="glass rounded-3xl p-6 flex flex-col"
-            >
-              <div className="flex gap-0.5 mb-4">
-                {Array.from({ length: 5 }).map((_, j) => (
-                  <Star key={j} className="h-3.5 w-3.5 fill-white text-white" />
-                ))}
-              </div>
-              <blockquote className="text-white/85 leading-relaxed text-[15px] flex-1">
-                "{r.quote}"
-              </blockquote>
-              <figcaption className="mt-6 pt-5 border-t border-white/10">
-                <div className="text-sm text-white font-medium">{r.name}</div>
-                <div className="text-xs text-white/45">{r.role}</div>
-              </figcaption>
-            </motion.figure>
-          ))}
-        </div>
-      </div>
-    </section>
+    <Gallery4
+      eyebrow="5.0 stars · 93 reviews"
+      title="A reputation built one car at a time."
+      description="Real reviews from customers who trust Mansory Detailing for premium car care in Huntingdon Valley."
+      items={reviewItems}
+    />
   );
 }

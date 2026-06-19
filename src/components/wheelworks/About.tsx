@@ -1,23 +1,24 @@
 import { motion } from "motion/react";
 import { Sparkles, ShieldCheck, Trees } from "lucide-react";
+import { ReviewSummaryCard } from "@/components/ui/card-2";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
 const pillars = [
   {
     icon: Sparkles,
-    title: "Premium car care specialists",
-    body: "Every vehicle is treated with the same care, whether it's a daily driver or a flagship luxury car.",
+    title: "Premium detailing specialists",
+    body: "Every vehicle gets the same meticulous care — whether it's a daily driver or a flagship luxury car.",
   },
   {
     icon: ShieldCheck,
-    title: "Hand-washed, never rushed",
-    body: "Full-service hand washing and detailing tailored to your car — done right, the first time.",
+    title: "Done right, every time",
+    body: "Full-service exterior and interior detailing tailored to your car — never rushed, never cut corners.",
   },
   {
     icon: Trees,
-    title: "Right by the Pennypack Trail",
-    body: "Drop your car off and enjoy a walk on the trail while we make it look its best.",
+    title: "Huntingdon Valley, PA",
+    body: "Conveniently located on Pioneer Road. Drop off your car and pick it up looking showroom-ready.",
   },
 ];
 
@@ -25,26 +26,34 @@ export function About() {
   return (
     <section className="relative py-28 px-6">
       <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease }}
-          className="max-w-2xl"
-        >
-          <div className="text-[11px] uppercase tracking-[0.2em] text-white/50 mb-5">Who we are</div>
-          <h2
-            className="text-gradient text-4xl sm:text-5xl md:text-6xl tracking-[-0.03em] leading-[1.02]"
-            style={{ fontFamily: "'Instrument Serif', serif" }}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 lg:gap-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease }}
+            className="max-w-2xl"
           >
-            Convenient, high-quality car care — designed around your day.
-          </h2>
-          <p className="mt-6 text-white/65 text-base sm:text-lg leading-relaxed">
-            Wheelworks VIP is a premium hand wash and detailing studio in Huntingdon Valley.
-            Our mission is simple: the most convenient, cost-effective way to keep your car looking
-            its absolute best.
-          </p>
-        </motion.div>
+            <div className="text-[11px] uppercase tracking-[0.2em] text-white/50 mb-5">Who we are</div>
+            <h2
+              className="text-gradient text-4xl sm:text-5xl md:text-6xl tracking-[-0.03em] leading-[1.02]"
+              style={{ fontFamily: "'Instrument Serif', serif" }}
+            >
+              The benchmark for flawless automotive styling.
+            </h2>
+            <p className="mt-6 text-white/65 text-base sm:text-lg leading-relaxed">
+              Mansory Detailing is a premium car detailing service on Pioneer Road in Huntingdon Valley.
+              Rated 5.0 stars with 93 reviews — our work is a testament to the highest standards of automovite excellence.
+            </p>
+          </motion.div>
+
+          <ReviewSummaryCard
+            rating={5.0}
+            reviewCount={93}
+            summaryText="Outstanding: Rated 5.0 with 93 Google reviews."
+            className="glass rounded-3xl border-white/10 bg-transparent shadow-none mx-auto lg:mx-0 shrink-0"
+          />
+        </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-5">
           {pillars.map((p, i) => (

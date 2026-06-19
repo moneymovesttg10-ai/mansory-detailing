@@ -23,31 +23,33 @@ export function Specials() {
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 glass rounded-full px-3 py-1.5 text-[11px] text-white/70 mb-5">
                 <Tag className="h-3 w-3" />
-                Limited-time offer
+                Book with us
               </div>
               <h3
                 className="text-gradient text-3xl sm:text-4xl md:text-5xl tracking-[-0.03em] leading-[1.05]"
                 style={{ fontFamily: "'Instrument Serif', serif" }}
               >
-                Spring Special — $25 off any Full Detail.
+                Consultation & booking via DM or phone.
               </h3>
               <p className="mt-4 text-sm text-white/60 leading-relaxed max-w-md">
-                Mention this coupon when you book. Expires 5/31/26.
+                Message us on Instagram at @mansory.detailing or call (215) 398-8619 to schedule your detail.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row lg:flex-col gap-3 lg:min-w-[220px]">
               <a
-                href="tel:2159478927"
+                href="https://instagram.com/mansory.detailing"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-white text-black rounded-full px-5 py-3 text-sm font-medium hover:bg-white/90 transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                Claim by phone
+                DM on Instagram
               </a>
               <a
-                href="#pricing"
+                href="tel:2153988619"
                 className="inline-flex items-center justify-center gap-2 glass rounded-full px-5 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors"
               >
-                See full detail pricing
+                Call to book
               </a>
             </div>
           </div>

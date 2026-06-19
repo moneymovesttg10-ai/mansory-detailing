@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-24">
       {/* Interactive waves background */}
-      <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_80%)]">
+      <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_35%,transparent_80%)]">
         <Waves strokeColor="rgba(255,255,255,0.14)" />
       </div>
       <div className="absolute inset-0" style={{ background: "var(--gradient-mesh)" }} />

@@ -143,7 +143,7 @@ export function Pricing() {
                 ))}
               </ul>
               <a
-                href="tel:2159478927"
+                href="tel:2153988619"
                 className="mt-7 inline-flex items-center justify-center text-sm font-medium rounded-full px-4 py-2.5 bg-white text-black hover:bg-white/90 transition-colors"
               >
                 Book this service
@@ -153,7 +153,7 @@ export function Pricing() {
         </div>
 
         <p className="mt-8 text-xs text-white/45 text-center">
-          Pricing may vary based on vehicle condition. Call for a personalized quote.
+          Pricing may vary based on vehicle size and condition. Call or DM for a personalized quote.
         </p>
       </div>
     </section>
